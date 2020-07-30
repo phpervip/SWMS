@@ -55,7 +55,7 @@
 
     <h2 style="background:#3CF"><span class="icon-user"></span>其他</h2>
     <ul style="display:block">
-      <li><a href="teacher_pw_update" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
+      <li><a href="teacher_pw_update.php" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
     </ul>
 
   </div>
