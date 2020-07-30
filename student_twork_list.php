@@ -95,12 +95,12 @@
                 <?php
                 } else {
                 ?>
-                  <a href="student_work_upload?id=<?php echo $row['id'] ?>&wname=<?php echo $row['wname'] ?>&cno=<?php echo $row['course_number'] ?>"><button class="button_new button_green">提交</button></a>
+                  <a href="student_work_upload.php?id=<?php echo $row['id'] ?>&wname=<?php echo $row['wname'] ?>&cno=<?php echo $row['course_number'] ?>"><button class="button_new button_green">提交</button></a>
                 <?php
                 }
               } else {
                 ?>
-                <a href="student_work_upload?id=<?php echo $row['id'] ?>&wname=<?php echo $row['wname'] ?>&cno=<?php echo $row['course_number'] ?>"><button class="button_new button_green">提交</button></a>
+                <a href="student_work_upload.php?id=<?php echo $row['id'] ?>&wname=<?php echo $row['wname'] ?>&cno=<?php echo $row['course_number'] ?>"><button class="button_new button_green">提交</button></a>
             <?php
               }
             }
