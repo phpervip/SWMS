@@ -89,6 +89,12 @@ if (isset($_POST['up'])) {
   //学生上传文档自动命名格式：学号-课程名-作业名-作业id.后缀
   $address = "./files/student_work/" .$row_course['name'].'/'.$wname.'/'. $sno
     . '-' . $row_name['name'] . '-' . $wname . '-' . $wid . $suffix;
+  // 目录不存在时，创建目录  
+  $save_path = "./files/student_work/" .$row_course['name']."/".$wname;
+  if(!file_exists($save_path)){
+        mkdir($save_path,0777,true);
+  }
+  // 保存在指定目录下
   move_uploaded_file($arr['tmp_name'], $address);
 
   $sql2 = "select * from student where stu_number=$sno";
