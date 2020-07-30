@@ -107,10 +107,11 @@ if (isset($_POST['up'])) {
     . '-' . $wname . '-' . $tea_name . $suffix;
   move_uploaded_file($arr['tmp_name'], $address);
   //获取课程号
-  $sql1 = "select course_number from `course` where tea_number=$tno";
-  $data = $link->query($sql1);
-  foreach ($data as $v);
-  $cno = $v['course_number'];
+  // $sql1 = "select course_number from `course` where tea_number=$tno";
+  // $data = $link->query($sql1);
+  // foreach ($data as $v);
+  // $cno = $v['course_number'];
+  $cno = $_POST['course_number'];
   $sql = "INSERT INTO teacher_work (`wname`,`course_number`,`tea_number`,`address`,`deadline`,`uploaddate`)
 	VALUES ('$wname', '$cno', '$tno', '$address','$deadline', '$datetime')";
   $result = $link->query($sql);
