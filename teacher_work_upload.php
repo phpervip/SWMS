@@ -21,6 +21,15 @@
 
     <div class="body-content">
       <form method="post" class="form-x" action="" enctype="multipart/form-data">
+	 <div class="form-group">
+          <div class="label">
+            <label>课程号：</label>
+          </div>
+          <div class="field">
+            <input type="text" class="input w50" value="" name="course_number" data-validate="required:请输入课程号" />
+            <div class="tips"></div>
+          </div>
+        </div>         		
         <div class="form-group">
           <div class="label">
             <label>作业名：</label>
@@ -30,7 +39,6 @@
             <div class="tips"></div>
           </div>
         </div>
-
         <div class="form-group">
           <div class="label">
             <label>截止时间：</label>
