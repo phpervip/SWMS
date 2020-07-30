@@ -167,9 +167,10 @@ CREATE TABLE IF NOT EXISTS `student_work` (
   `stu_number` int(11) NOT NULL,
   `sname` varchar(10) NOT NULL,
   `course_number` int(11) NOT NULL,
-  `address` varchar(50) NOT NULL,
+  `address` varchar(255) NOT NULL,
   `uploaddate` datetime NOT NULL,
   `score` int(5) DEFAULT NULL,
+  `twork_id` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
@@ -228,6 +229,7 @@ CREATE TABLE IF NOT EXISTS `teacher_work` (
   `tea_number` int(11) NOT NULL,
   `address` varchar(50) NOT NULL,
   `uploaddate` datetime NOT NULL,
+  `deadline` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
